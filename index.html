@@ -33,12 +33,35 @@
 <body>
   <img src="1.png" id="main-product-img"/>
   <div class="product-img-container">
-    <img src="1.png" class="product-img"/>
-    <img src="2.png" class="product-img"/>
-    <img src="3.jpg" class="product-img"/>
-    <img src="4.jpg" class="product-img"/>
-    <img src="5.jpg" class="product-img"/>
-    <img src="6.jpg" class="product-img"/>
+    <img src="1.png" class="product-img" onclick=" ChangeImage(1)"/>
+    <img src="2.png" class="product-img" onclick=" ChangeImage(2)"/>
+    <img src="3.jpg" class="product-img" onclick=" ChangeImage(3)"/>
+    <img src="4.jpg" class="product-img" onclick=" ChangeImage(4)"/>
+    <img src="5.jpg" class="product-img" onclick=" ChangeImage(5)"/>
+    <img src="6.jpg" class="product-img" onclick=" ChangeImage(6)"/>
   </div>  
+  <script>
+    function ChangeImage(num){
+   const mainImage=document.getElementById('main-product-img');
+   if(num==1){
+    mainImage.src="1.png";
+   }
+   else if(num==2){
+    mainImage.src="2.png";
+   }
+   else if(num==3){
+    mainImage.src="3.jpg";
+   }
+   else if(num==4){
+    mainImage.src="4.jpg";
+   }
+   else if(num==2){
+    mainImage.src="5.jpg";
+   }
+   else{
+    mainImage.src="6.jpg";
+   }
+    }
+  </script>
 </body>
 </html>
